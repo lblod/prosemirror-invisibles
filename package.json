@@ -21,6 +21,7 @@
     "watch:serve": "vite",
     "watch:typecheck": "tsc --noEmit --watch",
     "build": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
+    "prepare": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
     "test": "jest",
     "pages": "npm run build-pages && http-server ./pages/dist",
     "prepublishOnly": "yarn build",
