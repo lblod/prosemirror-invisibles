@@ -4,6 +4,12 @@
   "description": "A plugin to show invisibles in prosemirror",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "types": "dist/index.d.ts",
   "license": "MIT",
   "author": {
