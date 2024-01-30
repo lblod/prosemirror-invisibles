@@ -6,9 +6,14 @@
   "module": "dist/index.es.js",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.es.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs.js"
+      }
     }
   },
   "types": "dist/index.d.ts",
@@ -62,15 +67,11 @@
     "vite-tsconfig-paths": "^3.5.0"
   },
   "jest": {
-    "modulePaths": [
-      "<rootDir>/src/ts"
-    ],
+    "modulePaths": ["<rootDir>/src/ts"],
     "moduleNameMapper": {
       "\\.(css|less)$": "identity-obj-proxy"
     },
-    "testMatch": [
-      "**/?(*.)+(spec|test).[jt]s?(x)"
-    ],
+    "testMatch": ["**/?(*.)+(spec|test).[jt]s?(x)"],
     "preset": "ts-jest",
     "testEnvironment": "jest-environment-jsdom"
   },
