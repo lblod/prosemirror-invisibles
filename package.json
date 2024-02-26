@@ -28,7 +28,6 @@
     "watch:typecheck": "tsc --noEmit --watch",
     "build": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
     "prepack":  "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
-    "prepare": "workaround-broken-npm-prepack-behavior prepack",
     "test": "jest",
     "pages": "npm run build-pages && http-server ./pages/dist",
     "prepublishOnly": "yarn build",
@@ -65,8 +64,7 @@
     "ts-jest": "^29.0.3",
     "typescript": "4.8.3",
     "vite": "^2.9.13",
-    "vite-tsconfig-paths": "^3.5.0",
-    "workaround-broken-npm-prepack-behavior": "github:cspotcode/workaround-broken-npm-prepack-behavior#1a7adbbb8a527784daf97edad6ba42d6e96611f6"
+    "vite-tsconfig-paths": "^3.5.0"
   },
   "jest": {
     "modulePaths": ["<rootDir>/src/ts"],
