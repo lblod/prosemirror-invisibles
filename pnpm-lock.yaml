@@ -103,6 +103,9 @@ devDependencies:
   vite-tsconfig-paths:
     specifier: ^3.5.0
     version: 3.5.0(vite@2.9.15)
+  workaround-broken-npm-prepack-behavior:
+    specifier: github:cspotcode/workaround-broken-npm-prepack-behavior#1a7adbbb8a527784daf97edad6ba42d6e96611f6
+    version: github.com/cspotcode/workaround-broken-npm-prepack-behavior/1a7adbbb8a527784daf97edad6ba42d6e96611f6
 
 packages:
 
@@ -3557,6 +3560,7 @@ packages:
       chalk: 2.4.2
       diff-match-patch: 1.0.5
     dev: true
+    bundledDependencies: []
 
   /kleur@3.0.3:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
@@ -5225,4 +5229,11 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  github.com/cspotcode/workaround-broken-npm-prepack-behavior/1a7adbbb8a527784daf97edad6ba42d6e96611f6:
+    resolution: {tarball: https://codeload.github.com/cspotcode/workaround-broken-npm-prepack-behavior/tar.gz/1a7adbbb8a527784daf97edad6ba42d6e96611f6}
+    name: workaround-broken-npm-prepack-behavior
+    version: 0.0.1
+    hasBin: true
     dev: true
