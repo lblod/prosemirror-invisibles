@@ -1,7 +1,7 @@
 {
-  "name": "@guardian/prosemirror-invisibles",
-  "version": "3.0.3",
-  "description": "A plugin to show invisibles in prosemirror",
+  "name": "@say-editor/prosemirror-invisibles",
+  "version": "0.0.0",
+  "description": "Fork of @guardian/prosemirror-invisibles for the say-editor",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "exports": {
@@ -18,10 +18,7 @@
   },
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "author": {
-    "name": "Richard Beddington",
-    "email": "richard.beddington@guardian.co.uk"
-  },
+  "author": "redpencil.io",
   "scripts": {
     "watch": "run-p watch:*",
     "watch:serve": "vite",
