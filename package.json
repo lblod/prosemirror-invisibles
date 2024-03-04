@@ -26,11 +26,11 @@
     "watch": "run-p watch:*",
     "watch:serve": "vite",
     "watch:typecheck": "tsc --noEmit --watch",
+    "typecheck": "tsc --noEmit",
     "build": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
-    "prepack":  "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
+    "prepack":  "pnpm build",
     "test": "jest",
     "pages": "npm run build-pages && http-server ./pages/dist",
-    "prepublishOnly": "yarn build",
     "format": "prettier --write './src/**/*.ts'",
     "build-pages": "vite build -c vite.config.pages.ts",
     "publish-pages": "git subtree push --prefix pages/dist origin gh-pages"
