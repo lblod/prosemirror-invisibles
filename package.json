@@ -25,7 +25,7 @@
     "watch:typecheck": "tsc --noEmit --watch",
     "typecheck": "tsc --noEmit",
     "build": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
-    "prepack":  "pnpm build",
+    "prepack": "vite build && tsc --declaration --emitDeclarationOnly --outDir dist/",
     "test": "jest",
     "pages": "npm run build-pages && http-server ./pages/dist",
     "format": "prettier --write './src/**/*.ts'",
