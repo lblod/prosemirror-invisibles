@@ -1,6 +1,6 @@
 {
   "name": "@say-editor/prosemirror-invisibles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fork of @guardian/prosemirror-invisibles for the say-editor",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
