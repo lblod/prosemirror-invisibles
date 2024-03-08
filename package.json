@@ -16,6 +16,11 @@
       }
     }
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
   "types": "dist/index.d.ts",
   "license": "MIT",
   "author": "redpencil.io",
